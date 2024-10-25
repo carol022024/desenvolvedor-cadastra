@@ -7,12 +7,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desenvolvedor Cadastra</title>
   <link rel="stylesheet" href="main.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header id="main-header">
+    <div class="container flex-between align-center">
+      <div class="logo">
+        <img src="img/header/cadastra.svg" alt="Ir para a página inicial." title="Ir para a página inicial.">
+      </div>
+      <div class="cart-icon">
+        <img src="img/header/cart-icon.svg" alt="Ir para o carrinho." title="Ir para o carrinho.">
+      </div>
+    </div>
+  </header>
 
-</body>
-<h1>Desafio Cadastra</h1>
+  <div class="container flex-between align-center row-title">
+    <div class="col-title">
+      <h1>Blusas</h1>
+    </div>
+
+    <div id="filter-mobile">Filtrar</div>
+
+    <div id="order"> 
+      <div class="font-16px" id="order-title">Ordenar</div>
+      <div class="options" id="order-options">
+        <div class="topo-mobile flex-between align-center">
+          <span>ORDENAR</span>
+          <svg class="close-order" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 18.852L17.5547 1.00001" stroke="black"/><line y1="-0.5" x2="25.2899" y2="-0.5" transform="matrix(0.711746 0.702437 -0.874311 0.485367 0 1.23547)" stroke="black"/></svg>
+        </div>
+
+        <div class="sort-option" data-value="recent">Mais recentes</div>
+        <div class="sort-option" data-value="low-price">Menor preço</div>
+        <div class="sort-option" data-value="high-price">Maior preço</div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container flex-between">
+    <div id="filter"> 
+      <div class="topo-mobile flex-between align-center">
+        <span>FILTRAR</span>
+        <svg class="close-filter" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 18.852L17.5547 1.00001" stroke="black"/><line y1="-0.5" x2="25.2899" y2="-0.5" transform="matrix(0.711746 0.702437 -0.874311 0.485367 0 1.23547)" stroke="black"/></svg>
+      </div>
+      <div id="box-filter">
+        <div>
+          <h3 class="filter-titles">FAIXA DE PREÇO</h3>
+          <div class="box-options">
+            <div data-type="price" data-value="0-50" class="price-filter filter-input">de R$0 até R$50</div>
+            <div data-type="price" data-value="51-150" class="price-filter filter-input">de R$51 até R$150</div>
+            <div data-type="price" data-value="151-300" class="price-filter filter-input">de R$151 até R$300</div>
+            <div data-type="price" data-value="301-500" class="price-filter filter-input">de R$301 até R$500</div>
+            <div data-type="price" data-value="500+" class="price-filter filter-input">a partir de R$500</div>
+          </div> 
+        </div>
+      </div>
+      <div class="botoes-finais-filtro flex-between align-center">
+        <button class="close-filter aply-filter">Aplicar</button>
+        <button id="clear-filters-btn">limpar</button>
+      </div>
+    </div>
+
+    <div id="products-container">
+      <div id="products"></div> 
+      <button id="load-more-btn">Carregar mais</button> 
+    </div>
+
+    <div class="modal-success">
+      <div class="modal-shadow"></div>
+      <div class="modal-content">
+        <div class="modal-close">x</div>
+        <div class="modal-text">
+          <p>O produto <span class="name"></span> foi adicionado ao carrinho com sucesso!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main-footer"> 
+    <div class="container">
+      <p>CADASTRA: Implantação de E-commerce VTEX</p>
+    </div>
+  </footer>
+</body> 
 
 <script src="bundle.js"></script>
 
