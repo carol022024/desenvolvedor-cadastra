@@ -19,6 +19,17 @@ Para executar o projeto, após clonar este repositório na sua máquina, execute
    ```bash 
    npm start
    ```
+
+Caso tenha problemas para executar, certifique-se de que o json-server está instalado no seu projeto. Execute o seguinte comando no terminal:
+
+   ```bash  
+      npm install json-server --save-dev
+   ```
+
+Se você deseja instalá-lo globalmente para que possa usá-lo em qualquer lugar, use:
+   ```bash   
+      npm install -g json-server
+   ```
    
    
 ##### E-mail para contato: [carol.ndj3@gmail.com](mailto:carol.ndj@gmail.com)
